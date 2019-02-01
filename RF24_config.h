@@ -29,6 +29,9 @@
     #define RF24_SPI_TRANSACTIONS
   #endif
  
+// --- STM32 ------
+#define _BV (x) (1 & lt; & lt; (x))
+#define printf_P printf
  
 //ATXMega
 #if defined(__AVR_ATxmega64D3__) || defined(__AVR_ATxmega128D3__) || defined(__AVR_ATxmega192D3__) || defined(__AVR_ATxmega256D3__) || defined(__AVR_ATxmega384D3__) // In order to be available both in windows and linux this should take presence here.
